@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E035528B20605E38007C556C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035528A20605E38007C556C /* AppDelegate.swift */; };
-		E035528D20605E38007C556C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035528C20605E38007C556C /* ViewController.swift */; };
+		E035528D20605E38007C556C /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035528C20605E38007C556C /* MainController.swift */; };
 		E035529020605E38007C556C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E035528E20605E38007C556C /* Main.storyboard */; };
 		E035529220605E38007C556C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E035529120605E38007C556C /* Assets.xcassets */; };
 		E035529520605E38007C556C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E035529320605E38007C556C /* LaunchScreen.storyboard */; };
 		E03552A020605E38007C556C /* madlibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035529F20605E38007C556C /* madlibsTests.swift */; };
 		E03552AB20605E38007C556C /* madlibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03552AA20605E38007C556C /* madlibsUITests.swift */; };
+		E03552B9206077F7007C556C /* formController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03552B8206077F7007C556C /* formController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		E035528720605E38007C556C /* madlibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = madlibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E035528A20605E38007C556C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E035528C20605E38007C556C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E035528C20605E38007C556C /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		E035528F20605E38007C556C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E035529120605E38007C556C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E035529420605E38007C556C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		E03552A620605E38007C556C /* madlibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madlibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03552AA20605E38007C556C /* madlibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madlibsUITests.swift; sourceTree = "<group>"; };
 		E03552AC20605E38007C556C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E03552B8206077F7007C556C /* formController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				E035528A20605E38007C556C /* AppDelegate.swift */,
-				E035528C20605E38007C556C /* ViewController.swift */,
+				E035528C20605E38007C556C /* MainController.swift */,
+				E03552B8206077F7007C556C /* formController.swift */,
 				E035528E20605E38007C556C /* Main.storyboard */,
 				E035529120605E38007C556C /* Assets.xcassets */,
 				E035529320605E38007C556C /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E035528D20605E38007C556C /* ViewController.swift in Sources */,
+				E03552B9206077F7007C556C /* formController.swift in Sources */,
+				E035528D20605E38007C556C /* MainController.swift in Sources */,
 				E035528B20605E38007C556C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hY-Je-afw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hY-Je-afw" customClass="mainLabel">
                                 <rect key="frame" x="10" y="323" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -93,6 +93,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitButton:" destination="UD6-BE-PNK" eventType="touchUpInside" id="8J0-8k-72R"/>
+                                    <action selector="submitButtonPressed:" destination="UD6-BE-PNK" eventType="touchUpInside" id="Wr8-R3-NJl"/>
                                 </connections>
                             </button>
                         </subviews>
