@@ -8,11 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    
+    @IBAction func submitButton(_ sender: Any) {
+    
+        
+    }
+    
+    @IBAction func oneTextField(_ sender: Any?) {
+    
+    }
+    
+//    var placeholder: String? {
+//        get set
+//    }
+//    oneTextField.placeholder = "Adjective"
 
+    var oneText = oneTextField(<#T##MainController#>)
+    oneText.attributedPlaceholder = NSAttributedString(string: "Adjective", attributes: [NSA ])
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+       
     }
 
     override func didReceiveMemoryWarning() {
