@@ -28,10 +28,8 @@ class MainController: UIViewController, FormControllerDelegate {
     //=============================================
     
     @IBOutlet weak var mainLabel: UILabel!
-    var output: String?
+//    var output: String?
     
-    
-    func formDataAction(controller: FormController, )
     
 
 
@@ -43,10 +41,28 @@ class MainController: UIViewController, FormControllerDelegate {
         let destination = segue.destination as! UIViewController
         destination.output = oneTextField.text
     }
+    
+    func itemSaved(by controller: FormController, with text: String, at ) {
+        if let adj =  = text
+        }else {
+            items.append(text)
+        }
+        tableView.reloadData()
+        dismiss(animated: true, completion: nil)
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
-    //============== PROTOCOL ================
+    //============== PROTOCOL (must be outside of the class or in seperate file ================
 
 protocol FormControllerDelegate: class {
     func itemSaved(by controller: FormController, with text: String, at indexPath: NSIndexPath?)
