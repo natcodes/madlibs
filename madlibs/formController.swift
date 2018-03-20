@@ -8,19 +8,22 @@
 
 import UIKit
 
-class formController: UIViewController {
-   
+class FormController: UIViewController {
     
-
+    var delegate: FormControllerDelegate?
+    
+    @IBOutlet weak var adj_field1: UITextField!
+    
+    @IBOutlet weak var verb1field: UITextField!
+    
+    @IBOutlet weak var verb2field: UITextField!
+    
+    @IBOutlet weak var nounfield4: UITextField!
+    
+    
     @IBAction func submitButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +33,6 @@ class formController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! UIViewController
-        destination.output = oneTextField.text
-    }
+
     
 }

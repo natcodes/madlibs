@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="359.19999999999999" y="125.4872563718141"/>
         </scene>
-        <!--View Controller-->
+        <!--Form Controller-->
         <scene sceneID="Rgx-rF-Jfg">
             <objects>
-                <viewController id="6gW-52-own" sceneMemberID="viewController">
+                <viewController id="6gW-52-own" customClass="FormController" customModule="madlibs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="31f-77-bNl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,6 +117,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YoP-56-EJ3"/>
                     </view>
+                    <connections>
+                        <outlet property="adj_field1" destination="JmA-TK-jWW" id="BPF-36-0A4"/>
+                        <outlet property="nounfield4" destination="rvh-nj-5Aq" id="F3O-dS-hE0"/>
+                        <outlet property="verb1field" destination="KVq-aj-niC" id="Cmn-GX-cdo"/>
+                        <outlet property="verb2field" destination="1dR-ct-RP5" id="Qek-yh-JCH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJa-57-bIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="UD6-BE-PNK" userLabel="Exit" sceneMemberID="exit"/>
