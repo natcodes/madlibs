@@ -9,63 +9,39 @@
 import UIKit
 
 class MainController: UIViewController, FormControllerDelegate {
+   
+    @IBOutlet weak var mainLabel: UILabel!
     
-    //====================================================
+    //tell the controller what to do when teh submitted Data comes through after the submit button is pressed.
+    func submittedData(adjective: String, verb1: String, verb2: String, noun: String) {
+        print("$$$$$$")
+        mainLabel.text = "We are having a perfectly \(adjective) time now. Later we will \(verb1) and \(verb2) in the \(noun)."
+        dismiss(animated: true, completion: nil)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if mainLabel.text == nil {
-            mainLabel.text = "..."
-        }
- mainLabel.text = "We are having a perfectly \(adjective)\ time now. Later we will (\verb) and (\verb) in the \(noun)."
-    }
-    
-    //=============================================
-    
-    @IBOutlet weak var mainLabel: UILabel!
-//    var output: String?
-    
-    
-
-
-    // ====== segue funcs ========================
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        mainLabel.text = "..."
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! UIViewController
-        destination.output = oneTextField.text
+        let destination = segue.destination as! FormController
+        //cast the destination going from this controller to the next.
+        destination.delegate = self
     }
-    
-    func itemSaved(by controller: FormController, with text: String, at ) {
-        if let adj =  = text
-        }else {
-            items.append(text)
-        }
-        tableView.reloadData()
-        dismiss(animated: true, completion: nil)
-    }
-
-
-
-
-
-
-
-
-
+    //perform is only for dynamic cells (cell of row at func). A static button doesn't need the perform.
 }
 
 
-    //============== PROTOCOL (must be outside of the class or in seperate file ================
 
-protocol FormControllerDelegate: class {
-    func itemSaved(by controller: FormController, with text: String, at indexPath: NSIndexPath?)
-}
+
+
+
+
+
 
 

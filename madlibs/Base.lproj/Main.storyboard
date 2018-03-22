@@ -10,16 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="madlibs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="madlibs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hY-Je-afw" customClass="mainLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qS-a1-O3X">
                                 <rect key="frame" x="10" y="323" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -28,24 +27,26 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4hY-Je-afw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8y3-8A-5XP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4hY-Je-afw" secondAttribute="trailing" constant="10" id="Er6-4b-PoP"/>
-                            <constraint firstItem="4hY-Je-afw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eaK-PA-5wq"/>
-                            <constraint firstItem="4hY-Je-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zN0-TN-Zki"/>
+                            <constraint firstItem="7qS-a1-O3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="9cn-wk-JW9"/>
+                            <constraint firstItem="7qS-a1-O3X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RH1-wU-rkX"/>
+                            <constraint firstItem="7qS-a1-O3X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uei-dO-fov"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7qS-a1-O3X" secondAttribute="trailing" constant="10" id="quz-3s-xHY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="TID-P7-Zca">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="4IT-Wn-4Zd">
                             <connections>
-                                <segue destination="6gW-52-own" kind="presentation" id="kAE-c5-RhR"/>
+                                <action selector="formSeguePressed:" destination="BYZ-38-t0r" id="74T-gh-iFl"/>
+                                <segue destination="6gW-52-own" kind="presentation" identifier="VCmaintoForm" id="kAE-c5-RhR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mainLabel" destination="4hY-Je-afw" id="mMB-gu-hbl"/>
+                        <outlet property="mainLabel" destination="7qS-a1-O3X" id="ZmY-rj-h79"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="359.19999999999999" y="125.4872563718141"/>
         </scene>
@@ -94,6 +95,7 @@
                                 <connections>
                                     <action selector="submitButton:" destination="UD6-BE-PNK" eventType="touchUpInside" id="8J0-8k-72R"/>
                                     <action selector="submitButtonPressed:" destination="UD6-BE-PNK" eventType="touchUpInside" id="Wr8-R3-NJl"/>
+                                    <action selector="submitButtonPressed:" destination="6gW-52-own" eventType="touchUpInside" id="rQD-N3-B3A"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -15,6 +15,7 @@
 		E03552A020605E38007C556C /* madlibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035529F20605E38007C556C /* madlibsTests.swift */; };
 		E03552AB20605E38007C556C /* madlibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03552AA20605E38007C556C /* madlibsUITests.swift */; };
 		E03552B9206077F7007C556C /* formController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03552B8206077F7007C556C /* formController.swift */; };
+		E03552BB2061CAA2007C556C /* FormControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03552BA2061CAA2007C556C /* FormControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E03552AA20605E38007C556C /* madlibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madlibsUITests.swift; sourceTree = "<group>"; };
 		E03552AC20605E38007C556C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E03552B8206077F7007C556C /* formController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formController.swift; sourceTree = "<group>"; };
+		E03552BA2061CAA2007C556C /* FormControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E035528A20605E38007C556C /* AppDelegate.swift */,
 				E035528C20605E38007C556C /* MainController.swift */,
 				E03552B8206077F7007C556C /* formController.swift */,
+				E03552BA2061CAA2007C556C /* FormControllerDelegate.swift */,
 				E035528E20605E38007C556C /* Main.storyboard */,
 				E035529120605E38007C556C /* Assets.xcassets */,
 				E035529320605E38007C556C /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E03552B9206077F7007C556C /* formController.swift in Sources */,
+				E03552BB2061CAA2007C556C /* FormControllerDelegate.swift in Sources */,
 				E035528D20605E38007C556C /* MainController.swift in Sources */,
 				E035528B20605E38007C556C /* AppDelegate.swift in Sources */,
 			);
